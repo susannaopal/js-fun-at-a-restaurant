@@ -7,14 +7,14 @@ function createMenuItem(name, price, type) {
   return menuItem
 }
 
-function addIngredients(foodItem, items) {
-
-  // var ingredients = ingredients.push(foodItem);
-  // // var ingredients = [];
-  // for (var i = 0; i < ingredients.length; i++) {
-  //   ingredients.push(cheese)
-  // }
-}
+function addIngredients(items, ingredients) {
+    for (var i = 0; i < ingredients.length; i++) {
+      if (items === ingredients[i]) {
+        return;
+      }
+    }
+    ingredients.push(items);
+};
 
 
 module.exports = {
@@ -25,5 +25,3 @@ module.exports = {
   // decreasePrice,
   // createRecipe
 }
-
-
