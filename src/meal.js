@@ -16,12 +16,29 @@ function addIngredients(items, ingredients) {
     ingredients.push(items);
 };
 
+function formatPrice(initialPrice) {
+  return `$${initialPrice}`
+}
+
+
+function decreasePrice(price) {
+  return price - (price * 0.1)
+}
+
+function createRecipe(title, ingredients, type) {
+  var newRecipe = {
+    title: title,
+    ingredients: ingredients,
+    type: type
+  }
+  return newRecipe
+}
 
 module.exports = {
   nameMenuItem,
   createMenuItem,
   addIngredients,
-  // formatPrice,
-  // decreasePrice,
-  // createRecipe
+  formatPrice,
+  decreasePrice,
+  createRecipe
 }
