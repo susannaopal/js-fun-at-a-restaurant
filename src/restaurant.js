@@ -10,13 +10,19 @@ return {
 }
 };
 
+//if else instead?
+//for loop easier?
 function addMenuItem(restaurantName, menuItem) {
-  restaurantName.menus[menuItem.type].push(menuItem)
+  for (var i = 0; i < restaurantName.length; i++) {
+    if (restaurantName[i] === menuItem) {
+      return restaurantName.menus[menuItem.type].push(menuItem)
+  }
+}
 };
 
 
 module.exports = {
-  createRestaurant, 
+  createRestaurant,
   addMenuItem,
   // removeMenuItem
 }

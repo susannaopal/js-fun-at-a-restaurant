@@ -1,13 +1,13 @@
 function takeOrder(orders, deliveryOrders) {
   if (deliveryOrders.length < 3) {
-  deliveryOrders.push(orders)
+  return deliveryOrders.push(orders)
   }
 };
 
 function refundOrder(num, deliveryOrders){
   for (var i = 0; i < deliveryOrders.length; i++) {
     if (num === deliveryOrders[i].orderNumber){
-      deliveryOrders.splice(i, 1)
+      return deliveryOrders.splice(i, 1)
     }
   }
 };
