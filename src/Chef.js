@@ -3,10 +3,20 @@ class Chef {
     this.name = name || 'Hannah';
     this.restaurant = restaurant;
   }
-  greetCustomer(customer) {
-    return `Hello, ${customer}!`
+
+  greetCustomer(customer, morning) {
+    if (morning === false || morning === undefined) {
+      return `Hello, ${customer}!`
+    } else if (morning === true) {
+      return `Good morning, ${customer}!`
+    }
+  }
+  checkForFood(foodItem) {
+    return `Yes, we're serving ${foodItem} today!`;
 
   }
+
+
 }
 
 module.exports = Chef;
