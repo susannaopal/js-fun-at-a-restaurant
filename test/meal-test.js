@@ -13,7 +13,7 @@ var {
 describe("meal.js", function() {
   describe("nameMenuItem", function() {
     it("should be a function", function() {
-     assert.isFunction(nameMenuItem);
+    assert.isFunction(nameMenuItem);
     });
 
     it("should take in a name and make a delicious name", function () {

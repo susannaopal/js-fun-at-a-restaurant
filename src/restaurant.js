@@ -13,7 +13,7 @@ function addMenuItem(restaurantName, menuItem){
   for (var i = 0; i < restaurantName.menus[menuItem.type].length; i++) {
     if (menuItem === restaurantName.menus[menuItem.type][i]) {
       return;
-    }
+  }
 }
 return restaurantName.menus[menuItem.type].push(menuItem);
 };

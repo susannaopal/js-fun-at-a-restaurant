@@ -267,7 +267,6 @@ describe("order.js", function() {
     it("should be a function", function () {
       assert.isFunction(searchOrder);
     });
-//looking to see if a specific order is in the array
     it("should tell us if an order is in the list", function() {
       var order1 = {
         orderNumber: 1234,
@@ -284,7 +283,6 @@ describe("order.js", function() {
         orderType: "delivery",
         status: "accepted"
       };
-//the list is the array and tells us if an order is housed here
       var deliveryOrders = [order1, order2];
 
       assert.equal(searchOrder(deliveryOrders, "burger"), true);
